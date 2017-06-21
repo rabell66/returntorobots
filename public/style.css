@@ -1,0 +1,33 @@
+
+
+body{
+    background-color:palegoldenrod    
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.title{
+    padding:0 0 0 3vw;
+    color:grey;
+}
+p{
+    line-height:1vw;
+}
+h3{
+    color:#3780CC;
+}
+h4{color:salmon}
+
+.rows{ border: 1px black solid;
+    margin: 2vw;
+    flex: 1 1 17%;
+    text-align: center;
+}
+
+      
+     
+
