@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet"  href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+{{#}}
+{{#results}}
+    <div class = "avatar">
+        <img src ={{avatar}}>
+    </div>
+
+    <h1>{{name}}</h1><br>
+    
+        
+   
+
+   <div class = "jobStatus">
+    {{#job}}
+        <p>{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
+    {{/job}}
+    {{^job}}
+        <p>{{address.city}}, {{address.country}} | </p><p>Available for Hire</p>
+    {{/job}}
+       <p>{{email}}|{{phone}}
+
+    <div class ="education">
+    <h3>Education</h3>
+    <p>{{university}}</p>
+    </div>
+    <div class = "skills">
+     <h3>Skills</h3>
+    <p>{{skills}}</p>
+    </div>
+    {{/results}}
+
+</body>
+</html>

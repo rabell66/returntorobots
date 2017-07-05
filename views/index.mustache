@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class = "title">
+<h2>Index</h2>
+
+   <a href="/lookingforjob">Looking for a Job</a>    
+   <a href="/employed">Currently Employed</a>
+</div>
+<div class= "container">
+     
+        {{#users}}
+   
+   
+<div class = "rows">  
+<a href="user/{{ _id }}"><img src ={{avatar}}></a>     
+         
+        
+        
+         <h3>{{name}}</h3>
+        
+        {{#job}}
+         <p>{{job}}</p>
+         {{/job}}
+        {{^job}}
+        <h4>Available for Hire</h4>
+        {{/job}}
+         <p>{{company}}</p>
+        
+      </div>
+     
+          {{/users}}  
+        
+    </div>
+      
+  </div>
+
+
+</body>
+
+</html>

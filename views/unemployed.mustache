@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       {{#resultsunemployed}}
+   
+   
+<div class = "rows">  
+<a href="user/{{ _id }}"><img src ={{avatar}}></a>     
+         
+        
+        
+         <h3>{{name}}</h3>
+        
+        {{#job}}
+         <p>{{job}}</p>
+         {{/job}}
+        {{^job}}
+        <h4>Available for Hire</h4>
+        {{/job}}
+         <p>{{company}}</p>
+        
+      </div>
+     
+          {{/resultsunemployed}}  
+</body>
+</html>
